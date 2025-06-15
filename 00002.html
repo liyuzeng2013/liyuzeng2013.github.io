@@ -3,12 +3,37 @@
 <head>
 	<title>test</title>
     <meta charset="utf-8">
+    <style>
+        @media (orientation: portrait) {
+            body {
+                background-image: url("./images/bg-w-l.jpg"); /* 建议准备竖屏专用背景图 */
+            }
+            /* 新增：竖屏时介绍文字白色 */
+            #wenzhang {
+                color: white;
+            }
+        }
+        
+        /* 横屏（屏幕宽度大于高度） */
+        @media (orientation: landscape) {
+            body {
+                background-image: url("./images/bg-w.jpg"); /* 建议准备横屏专用背景图 */
+            };
+            /* 新增：横屏时介绍文字黑色 */
+            #wenzhang{
+                color: black;
+            }
+        }
+
+    </style>
 </head>    
 <body>
+    <div id="wenzhang">
     <a href="index.html">home</a>
 	<h1>怎么藏一张图片</h1>
 	<p>教程：</p>
     <a href="https://www.bilibili.com/video/BV1XyT2zWEx7/?spm_id_from=333.337.search-card.all.click&vd_source=a2e68f8c353f836609d46f0061dbc372">点我</a>
     <p>2025/6/8 16:59</p>
+    </div>
 </body>    
 </html>

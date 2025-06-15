@@ -2,11 +2,38 @@
 <html>
 <head>
 	<title>test</title>
+	<style>
+		@media (orientation: portrait) {
+            body {
+                background-image: url("./images/bg-w-l.jpg"); /* 建议准备竖屏专用背景图 */
+            }
+            /* 新增：竖屏时介绍文字白色 */
+            #wenzhang {
+                color: white;
+            }
+        }
+        
+        /* 横屏（屏幕宽度大于高度） */
+        @media (orientation: landscape) {
+            body {
+                background-image: url("./images/bg-w.jpg"); /* 建议准备横屏专用背景图 */
+            };
+            /* 新增：横屏时介绍文字黑色 */
+            #wenzhang{
+                color: black;
+            }
+        }
+
+
+
+	</style>
 </head>    
 <body>
-    <a href="index.html">home</a>
-	<h1>test</h1>
-	<p>test</p>
-    <p>2025/6/8 16:59</p>
+	<div id="wenzhang">
+    	<a href="index.html">home</a>
+		<h1>test</h1>
+		<p>test</p>
+    	<p>2025/6/8 16:59</p>
+	</div>
 </body>    
 </html>
