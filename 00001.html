@@ -3,6 +3,14 @@
 <head>
 	<title>test</title>
 	<style>
+        body{
+            /* 公共背景属性 */
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover; /* 新增：让背景覆盖整个屏幕 */
+            /* 初始背景（可选，若不需要可删除） */
+        }
 		@media (orientation: portrait) {
             body {
                 background-image: url("./images/bg-w-l.jpg"); /* 建议准备竖屏专用背景图 */
